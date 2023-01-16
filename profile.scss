@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+*
+{
+  font-family: 'Rubik Vinyl', cursive;
+}
+img
+{
+  border-radius: 50%;
+width: 250px;
+max-width: 500px;
+margin: 50px 0 0 100px;
+}
+.name
+{
+  margin-top: -20px;
+  font-size: 50px;
+}
+.name1
+{
+ font-size: 30px;
+}
+.name2
+{
+  font-size:30px;
+}
+.name4
+{
+  font-weight: 800;
+  border: 3px solid black;
+  border-radius: 67px;
+}
+.book {
+    transition: opacity 0.4s 0.2s;
+  }
+  p{
+    margin-top: 8vw;
+    text-align: center;
+    font-size: 5vw;
+    color: #000000;
+  }
+  .page {
+    width: 30vw;
+    height: 44vw;
+    background-color: #111111;
+    float: left;
+    margin-bottom: 0.5em;
+    background: left top no-repeat;
+    background-size: cover;
+  }
+  .page:nth-child(even) {
+    clear: both;
+  }
+  .book {    perspective: 250vw;
+
+  }
+  .book .pages {
+    width: 60vw;
+    height: 44vw;
+    position: relative;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    border-radius: 4px;
+    /*box-shadow: 0 0 0 1px #e3dfd8;*/
+  }
+  .book .page {
+    float: none;
+    clear: none;
+    margin: 15px;
+    position: absolute;
+    top: 0;
+    width: 30vw;
+    height: 44vw;
+    transform-origin: 0 0;
+    transition: transform 1.4s;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    user-select: none;
+    background-color: #dbdbdb;
+  }
+  .book .page:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.7s;
+    z-index: 2;
+  }
+  .book .page:nth-child(odd) {
+    pointer-events: all;
+    transform: rotateY(0deg);
+    right: 0;
+    border-radius: 0 4px 4px 0;
+    background-image: linear-gradient(to right, rgba(0,0,0,.15) 0%, rgba(0,0,0,0) 10%);
+  }
+  .book .page:nth-child(odd):hover {
+    transform: rotateY(-15deg);
+  }
+  .book .page:nth-child(odd):hover:before {
+    background: rgba(0, 0, 0, 0.03);
+  }
+  .book .page:nth-child(odd):before {
+    background: rgba(0, 0, 0, 0);
+  }
+  .book .page:nth-child(even) {
+    pointer-events: none;
+    transform: rotateY(180deg);
+    transform-origin: 100% 0;
+    left: 0;
+    border-radius: 4px 0 0 4px;
+    border-color: black;
+    background-image: linear-gradient(to left, rgba(0,0,0,.12) 0%, rgba(0,0,0,0) 10%);
+  }
+  .book .page:nth-child(even):before {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .book .page.grabbing {
+    transition: none;
+  }
+  .book .page.flipped:nth-child(odd) {
+    pointer-events: none;
+    transform: rotateY(-180deg);
+  }
+  .book .page.flipped:nth-child(odd):before {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .book .page.flipped:nth-child(even) {
+    pointer-events: all;
+    transform: rotateY(0deg);
+  }
+  .book .page.flipped:nth-child(even):hover {
+    transform: rotateY(15deg);
+  }
+  .book .page.flipped:nth-child(even):hover:before {
+    background: rgba(0, 0, 0, 0.03);
+  }
+  .book .page.flipped:nth-child(even):before {
+    background: rgba(0, 0, 0, 0);
+  }
+
+ 
+  @media only screen and (min-width: 320px) 
+    and (max-width: 580px){
+      .book .page {        
+        margin-top:95px;
+        left: 200px;
+        position: absolute;
+        top: 0;
+        width: 50vw;
+        height: 94vw;   
+      }
+      
+      img
+{
+  border-radius: 50%;
+width: 100px;
+margin: 50px 80px;
+}
+.name
+{
+  margin-top: -50px;
+  font-size: 20px;
+}
+.name1
+{
+ font-size: 30px;
+}
+.name2
+{
+  font-size:20px;
+  margin-top: 200px;
+}
+.name4
+{
+    border-radius: 67px;
+}
+   }
+            
+@media only screen and (min-width: 580px) 
+    and (max-width: 900px) {
+      .book .page {        
+        margin-top:95px;
+        left: 200px;
+        position: absolute;
+        top: 0;
+        width: 50vw;
+        height: 94vw;   
+      }
+      
+      img
+{
+  border-radius: 50%;
+width: 100px;
+margin: 50px 80px;
+}
+.name
+{
+  margin-top: -50px;
+  font-size: 20px;
+}
+.name1
+{
+ font-size: 30px;
+}
+.name2
+{
+  font-size:20px;
+  margin-top: 200px;
+}
+.name4
+{
+    border-radius: 67px;
+}     
+
+    }
+  
+  

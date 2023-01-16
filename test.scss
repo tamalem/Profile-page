@@ -1,0 +1,35 @@
+*
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    background-color:brown;
+}
+.test
+{ 
+
+text-align: center;
+margin: 200px auto;
+
+button
+{
+    padding: 50px 50px 50px 50px;
+    background-color: aqua;
+    border: none;
+    border-radius: 6px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    box-shadow: 5px 5px 0px 0px pink;
+    &:hover
+    {
+        opacity: 0.8;
+        background-color: rgb(195, 252, 252);
+        transform: rotateY(32deg) rotateX(32deg) rotateZ(32deg);
+        
+
+    }
+    }
+}
+
+
+

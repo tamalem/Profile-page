@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
+* {
+  font-family: "Rubik Vinyl", cursive;
+}
+
+body {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #343434;
+  overflow-x: hidden;
+}
+
+.con .nav {
+  border: none;
+  padding: 20px 20px 47px 20px;
+  background-color: #C5CAC5;
+  margin: -9px;
+}
+.con .nav .nav1 {
+  float: right;
+  background-color: #C5CAC5;
+}
+.con .nav .nav1 a {
+  color: black;
+  border: none;
+  border-radius: 4px;
+  padding: 18px 88px 18px 88px;
+  text-decoration: none;
+  background-color: #C5CAC5;
+}
+.con .nav .nav1 a:hover {
+  background-image: linear-gradient(90deg, #C5CAC5 0%, #FFCF00 49%, #FC4F4F 80%, #C5CAC5 100%);
+  -webkit-animation: slidebg 5s linear infinite;
+          animation: slidebg 5s linear infinite;
+}
+.con .nav .nav1::after {
+  background-color: brown;
+}
+
+@-webkit-keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
+/*============================================================================== 
+    iPhone 4 and 4S || 320 x 480 || Default, Portrait and Landscape
+================================================================================ */
+@media only screen and (min-width: 320px) and (max-width: 580px) {
+  * .con .nav {
+    width: 100%;
+    padding-bottom: 60px;
+  }
+  * .con .nav .nav1 {
+    width: 50%;
+    display: none;
+    position: relative;
+    top: -10px;
+    left: 50px;
+    margin: 0px 12px 10px 12px;
+  }
+  * .con .nav .nav1 .hom {
+    position: relative;
+    top: -10px;
+    left: 50px;
+    margin: 0px 66px 10px 12px;
+    padding: 0px 12px 10px 12px;
+  }
+}
+/*============================================================================== 
+    iPad 1, 2, Mini and Air || 768 x 1024 || Default, Portrait and Landscape
+================================================================================ */
+@media only screen and (min-width: 581px) and (max-width: 1024px) {
+  .con .nav .nav1 {
+    margin: 0px 12px 10px 12px;
+  }
+  .con .nav .nav1 a {
+    margin: -30px 0px -30px -10px;
+    padding: 20px 40px 20px 40px;
+  }
+}
+@media only screen and (min-width: 581px) and (max-width: 1024px) and (orientation: portrait) {
+  .con .nav .nav1 {
+    margin: 0px 12px 10px 12px;
+  }
+  .con .nav .nav1 a {
+    margin: -30px 0px -30px -10px;
+    padding: 20px 40px 20px 40px;
+  }
+}
+@media only screen and (min-width: 581px) and (max-width: 1024px) and (orientation: landscape) {
+  .con .nav .nav1 {
+    margin: 0px 12px 10px 12px;
+  }
+  .con .nav .nav1 a {
+    margin: -30px 0px -30px -10px;
+    padding: 20px 40px 20px 40px;
+  }
+}/*# sourceMappingURL=media.css.map */
